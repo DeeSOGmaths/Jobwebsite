@@ -31,8 +31,8 @@
         <div class = "sub1div-2">
             <i class = "fa-solid fa-gear"> </i><br>
 
-            <p> <span>  High Developer Skillset </span> <br><br> Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Duis metus metus,<br>
-vulputate laoreet ipsum.</p>
+            <p> <span>  High Developer Skillset </span> <br><br> I possess a wide range of skills<br> for computing and programming, some <br> including,
+Python, JavaScript, Java.</p>
 
         </div>
 
@@ -41,8 +41,8 @@ vulputate laoreet ipsum.</p>
          <div class = "sub1div-2">
             <i class = "fa-solid fa-boxes"> </i><br>
 
-            <p> <span>  Creativity and Leadership </span> <br><br> Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Duis metus metus,<br>
-vulputate laoreet ipsum.</p>
+            <p> <span>  Creativity and Leadership </span> <br><br> Your goals can only be acheived,<br> by setting a pace. contact me, and let <br> me turn
+your ideas into creativity.</p>
 
         </div>
 
@@ -57,9 +57,9 @@ vulputate laoreet ipsum.</p>
         <div class = "sub2div-2">
 
             <div> 
-            <p> <span> About Me </span> <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Duis metus metus,
-vulputate laoreet ipsum. Mauris iaculis <br> tincidunt auctor. Sed vehicula est Nunc
-Suspendisse potenti. <br> Nullam eu consectetur urna. Donec vitae lectus ipsum Nunc. </p>
+            <p> <span> About Me </span> <br><br> I am a cool, easy-going technology enthusiast. <br> who loves to play games,
+read scientific books, build up <br> with friends and to evolve spiritually. I also love teaching <br> others 
+to grow and improve, as i believe success isn't <br> measured by wealth, but by improvement. </p>
             </div> 
 
             <div class = "sub2div-2-boxes">

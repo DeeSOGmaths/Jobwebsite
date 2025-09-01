@@ -1,6 +1,7 @@
 <script>
-
-  
+     function NotAvailable(){
+        alert("This feature is not available yet. Stay tuned for updates!");
+     }
 </script>
 
 
@@ -9,9 +10,9 @@
 
             <div> 
 
-            <p> <span> Transforming visions into <br> exceptional portfolios</span> <br><br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Duis metus metus,
-vulputate laoreet ipsum. Mauris iaculis <br> tincidunt auctor. Sed vehicula est Nunc
-Suspendisse potenti. <br> Nullam eu consectetur urna. Donec vitae lectus ipsum Nunc. </p>
+            <p> <span> Transforming visions into <br> exceptional portfolios</span> <br><br><br> Within a span of 6 months, I've been able to leverage, <br> my abilities to develop,
+many exciting projects. Some including <br> A Data Encryption Tool - DET, it was used to encrypt a
+users <br> data by assigning them a unique key, then transforming the <br> data to binary characters. </p>
 
             </div> 
 
@@ -20,7 +21,7 @@ Suspendisse potenti. <br> Nullam eu consectetur urna. Donec vitae lectus ipsum N
 
             <div class = "icon-sub-div"> 
 
-            <p>  <a href = "/" class = "anchor"> Watch a video </a>  </p>
+            <p>  <a href = "/" class = "anchor" on:click={NotAvailable}> Watch a video </a>  </p>
 
             <p>  <i class="fa-solid fa-thumbs-up fa-shake" style = "--fa-animation-duration: 5s; --fa-animation-delay:2s"></i> </p>
 

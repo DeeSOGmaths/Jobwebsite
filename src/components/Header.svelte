@@ -104,9 +104,7 @@
     "ELXP" 0;
     }
 
-    .fa-solid{
-        color:white;
-    }
+   
 
 
 
@@ -129,6 +127,9 @@
        "wdth" 100;
         
 }
+.fa-solid{
+        color:white;
+    }
 
 
 
@@ -216,6 +217,10 @@
       
 }
 
+.fa-solid{
+        color:white;
+    }
+
 
 
 .menu-icon {
@@ -302,6 +307,10 @@
         justify-content: space-evenly;
         align-items: center;
 }
+.fa-solid{
+        color:white;
+        display:none
+    }
         .div2{
             display:none
         }

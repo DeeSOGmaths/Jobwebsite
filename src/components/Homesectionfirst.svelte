@@ -22,9 +22,9 @@
 
         <div>
 
-            <p class = "description-paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus metus,<br> 
-                vulputate laoreet ipsum. Mauris iaculis tincidunt auctor. Sed vehicula est Nunc <br>
-                Suspendisse potenti. Nullam eu consectetur urna. Donec vitae lectus ipsum Nunc.
+            <p class = "description-paragraph"> Junior Software Engineer & Video-Maker with a passion, for Python, <br>Data Structures,
+                OOP technologies, Artificial Intelligence and Learning. <br>
+                With a right-on-time record of delivering successful web solutions.
              </p>
 
         </div>

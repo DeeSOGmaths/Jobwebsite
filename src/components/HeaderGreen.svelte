@@ -82,10 +82,7 @@
         margin: 0;
         padding: 0;  
     }
-    .fa-solid{
-        color:white;
-    }
-
+   
     .menu li a {
         text-decoration: none;
         color:white 
@@ -131,6 +128,10 @@
        "wdth" 100;
         
 }
+ .fa-solid{
+        color:white;
+    }
+
 
 
 
@@ -216,6 +217,10 @@
        "wdth" 100;
       
 }
+
+ .fa-solid{
+        color:white;
+    }
 
 
 
@@ -319,6 +324,11 @@
         .menu-icon{
             display:none
         }
+         .fa-solid{
+        color:white;
+        display:none
+    }
+
     
 }
 

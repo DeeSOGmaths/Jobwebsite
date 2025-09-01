@@ -29,9 +29,9 @@
 
             <p>  <i class="fa-solid fa-globe"></i> </p>
 
-            <p class = "main-content"> <span class = "content"> WEB DEVELOPMENT </span>  <br><br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Duis metus metus,
-vulputate <br> laoreet ipsum. Mauris iaculis tincidunt <br> auctor. Sed vehicula est Nunc
-Suspendisse <br> Nullam eu consectetur urna. Donec vitae.  </p>
+            <p class = "main-content"> <span class = "content"> WEB DEVELOPMENT </span>  <br><br> I've made up to 6 responsive websites,<br> for my clients, all featuring great,
+and <br> unique instinct, creativity and design <br> I am willing to create solution delivering -
+<br> websites for you, just contact me now.  </p>
 
 
         </div>
@@ -44,9 +44,9 @@ Suspendisse <br> Nullam eu consectetur urna. Donec vitae.  </p>
 
             <p> <i class="fa-solid fa-robot"></i>  </p>
 
-            <p class = "main-content"> <span class = "content"> COMPUTER VISION/AI </span> <br><br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Duis metus metus,
-vulputate <br> laoreet ipsum. Mauris iaculis tincidunt <br> auctor. Sed vehicula est Nunc
-Suspendisse <br> Nullam eu consectetur urna. Donec vitae.</p>
+            <p class = "main-content"> <span class = "content"> COMPUTER VISION/AI </span> <br><br> As Artificial Intelligence is the, next big <br> thing, i believe it is 
+required to get your<br> hands on some AI tools, and one of my <br> best, happens to be Computer Vision
+and <br> Speech Recognition.</p>
 
 
         </div>
@@ -58,9 +58,9 @@ Suspendisse <br> Nullam eu consectetur urna. Donec vitae.</p>
 
             <p> <i class="fa-solid fa-desktop"></i> </p>
 
-            <p class = "main-content"> <span class = "content"> TELEGRAM BOT/DESKTOP APP </span> <br><br> Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Duis metus metus,
-vulputate <br> laoreet ipsum. Mauris iaculis tincidunt <br> auctor. Sed vehicula est Nunc
-Suspendisse <br> Nullam eu consectetur urna. Donec vitae. </p>
+            <p class = "main-content"> <span class = "content"> TELEGRAM BOT/DESKTOP APP </span> <br><br> Telegram as we know it, is becoming a<br>  social media platform for,
+web3 and its <br> enviroment. This new technology has opened <br> up a wide and spacious, ecosystem for many
+ <br> Industries, some including Finance and Tech. </p>
 
 
         </div>
