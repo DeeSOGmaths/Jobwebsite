@@ -23,6 +23,7 @@
         display:flex;
         flex-direction:row;
         animation-duration: 3s;
+        gap:20px
     }
     section div{
         font-size:1.5em;
@@ -37,17 +38,10 @@
         color:lightblue;
         transition:all 0.3s ease-in-out;
     }
-     section{
-            position:relative;
-            display:flex;
-            flex-direction:row;
-            align-items:center;
-            gap:20px;
-            
-        }
-        section a div .fa-brands:hover{
+   
+    section a div .fa-brands:hover{
             color:rgb(117, 62, 124)
-        }
+    }
 
      @media (max-width:768px){
        
@@ -59,6 +53,9 @@
     }
 
      @media (min-width:1024px){
+        .socials{
+            padding:2em 0
+        }
         
      }
 

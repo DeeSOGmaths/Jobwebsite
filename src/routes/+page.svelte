@@ -41,7 +41,10 @@
          background-image:linear-gradient(to right, #050b2e, #230627);
          width:100%;
          height:100%;
+         min-height: 100vh;
          overflow-x:hidden;
+         display: flex;
+         flex-direction: column;
     }
        
 
@@ -54,7 +57,9 @@
          padding:1em 1em 5em 1em;
          background-image:linear-gradient(to right, #050b2e, #230627);
          width:100vw;
-         height:100vh
+         height:100vh;
+         display: flex;
+         flex-direction: column;
     }
 
     }
@@ -62,11 +67,11 @@
      @media (min-width:1024px){
          section{
          height:100vh;
-         align-items:center;
          gap:3em;
          background-image:linear-gradient(to right, #050b2e, #230627);
-         width:100vw;
-    
+         width:100vw; 
+         display: flex;
+         flex-direction: column;
     }
 
         
