@@ -106,6 +106,14 @@
         border-color:lightblue
 
     }
+    .third-div .anchor1:hover{
+       background:rgba(118, 212, 217, 1)
+    }
+    .third-div .anchor2:hover{
+        background-image:linear-gradient(to right, rgba(30, 92, 98, 1), #6f4374ff )
+    }
+
+
     .div1{
         display:flex;
         flex-direction:column

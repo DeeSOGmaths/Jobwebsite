@@ -1,27 +1,59 @@
 import { json } from '@sveltejs/kit';
-import { keywords } from '$lib/data/bio';
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import { bio } from '$lib/data/bio';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+// Read API Key securely (as requested) from key.txt
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const keyPath = join(__dirname, 'key.txt');
+const keyContent = fs.readFileSync(keyPath, 'utf-8');
+// Extract key from 'APIKEY = "..."' format
+const apiKey = keyContent.match(/"([^"]+)"/)?.[1];
+
+if (!apiKey) {
+    console.error("Failed to extract API Key from key.txt");
+}
+
+const genAI = new GoogleGenerativeAI(apiKey);
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 export async function POST({ request }) {
     const { message } = await request.json();
-    const cleanMessage = message.toLowerCase();
 
-    let response = keywords.default;
+    try {
+        const systemPrompt = `
+You are ${bio.name} (also known as ${bio.nickname}).
+Role: ${bio.role}
+Location: ${bio.location}
+Email: ${bio.email}
 
-    // improved keyword matching
-    for (const [key, value] of Object.entries(keywords)) {
-        if (cleanMessage.includes(key)) {
-            response = value;
-            break;
-        }
+About: ${bio.about}
+Experience: ${bio.experience}
+Skills: ${bio.skills.join(", ")}
+Projects: ${bio.projects}
+Socials: ${JSON.stringify(bio.socials)}
+
+Your goal is to answer questions about yourself (${bio.nickname}) based on the information above.
+Be helpful, professional, yet friendly. If asked about something not in your bio, politely say you don't have that specific information but offer Related info.
+Keep responses concise and relevant to a personal portfolio chat context.
+`;
+
+        const result = await model.generateContent([
+            systemPrompt,
+            `User: ${message}`,
+            `Answer:`
+        ]);
+
+        const response = result.response.text();
+
+        return json({ response });
+
+    } catch (error) {
+        console.error("Gemini API Error:", error);
+        // Fallback or error message
+        return json({ response: "Sorry, I'm having trouble connecting to my brain right now. Please try again later." });
     }
-
-    // Fallback logic for common greetings
-    if (cleanMessage.includes("hello") || cleanMessage.includes("hi")) {
-        response = `Hello! I am ${keywords.name} How can I help you today?`;
-    }
-
-    // Simulate network delay for realism
-    await new Promise(r => setTimeout(r, 800));
-
-    return json({ response });
 }

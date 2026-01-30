@@ -50,11 +50,11 @@
 
             <i class = "fa-solid fa-close"></i>
 
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/DEESOG-AI">DEESOG-AI</a></li>
+            <li><a class = "route" href="/">Home</a></li>
+            <li><a class = "route" href="/about">About</a></li>
+            <li><a class = "route" href="/services">Services</a></li>
+            <li><a class = "route" href="/projects">Projects</a></li>
+            <li><a class = "ai" href="/DEESOG-AI">DEESOG-AI</a></li>
 
             
         </ul>
@@ -103,6 +103,9 @@
     "CRSV" 0.5,
     "ELSH" 0,
     "ELXP" 0;
+    }
+     .route:hover{
+        color:lightblue
     }
 
 
@@ -327,6 +330,18 @@
         color:white;
         display:none
     }
+    .ai{
+        padding:1em 2em;
+        border:2px solid lightblue;
+        background:transparent;
+        border-radius:7px
+        
+
+    }
+     .ai:hover{
+        background-image:linear-gradient(to right, rgba(30, 92, 98, 1), #bd7373ff)
+    }
+
 
     
 }
