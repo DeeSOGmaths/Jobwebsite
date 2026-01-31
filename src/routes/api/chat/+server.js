@@ -1,27 +1,16 @@
 import { json } from '@sveltejs/kit';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { bio } from '$lib/data/bio';
-import fs from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { GEMINI_API_KEY } from '$env/static/private';
 
-// Read API Key securely (as requested) from key.txt
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const keyPath = join(__dirname, 'key.txt');
-const keyContent = fs.readFileSync(keyPath, 'utf-8');
-// Extract key from 'APIKEY = "..."' format
-const apiKey = keyContent.match(/"([^"]+)"/)?.[1];
 
-if (!apiKey) {
-    console.error("Failed to extract API Key from key.txt");
-}
-
-const genAI = new GoogleGenerativeAI(apiKey);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 export async function POST({ request }) {
     const { message } = await request.json();
+
+    // use imported gemini apikey directly
+    const genAI = new GoogleGenerativeAI(GEMINI_API_KEY, { apiVersion: 'v1' });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     try {
         const systemPrompt = `
